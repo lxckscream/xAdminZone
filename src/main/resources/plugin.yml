@@ -1,0 +1,4 @@
+name: xAdminZone
+version: '${project.version}'
+main: ru.screamoov.xadminzone.XAdminZone
+api-version: '1.16'
