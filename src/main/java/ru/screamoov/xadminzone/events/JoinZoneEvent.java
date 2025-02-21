@@ -18,7 +18,6 @@ public class JoinZoneEvent extends Event {
         this.oldLocation=oldLocation;
     }
 
-
     @Override
     public HandlerList getHandlers() {
         return handlers;
