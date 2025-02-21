@@ -18,8 +18,8 @@ public final class XAdminZone extends JavaPlugin {
 
     @Override
     public void onDisable() {
-        adminZoneManager.players.forEach(player -> {
-            adminZoneManager.выселитьНахуй
+        adminZoneManager.players.forEach(xPlayer -> {
+            adminZoneManager.выселитьНахуй(xPlayer.player);
         });
     }
 }

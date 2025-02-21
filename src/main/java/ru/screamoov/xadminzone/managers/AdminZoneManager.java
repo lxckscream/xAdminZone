@@ -20,7 +20,7 @@ public class AdminZoneManager {
 
     public XPlayer getPlayer(Player player) {
         for (XPlayer xPlayer:players){
-            if (xPlayer.equals(player)) return xPlayer;
+            if (xPlayer.player.equals(player)) return xPlayer;
         }
         return null;
     }
@@ -28,7 +28,8 @@ public class AdminZoneManager {
     public void выселитьНахуй(Player player) {
         XPlayer xPlayer = getPlayer(player);
         if (xPlayer!= null) {
-            
+            player.teleport(xPlayer.oldLocation);
+            players.remove(xPlayer);
         }
     }
 }
